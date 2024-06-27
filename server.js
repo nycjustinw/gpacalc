@@ -31,7 +31,7 @@ app.use('/css', express.static(path.resolve(__dirname, "/assets/css")))
 app.use('/images', express.static(path.resolve(__dirname, "/assets/images")))
 
 // Start Server
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
