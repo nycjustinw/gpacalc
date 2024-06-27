@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator by Justin Wang</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GPA Calculator by Justin Wang</h1>
+        <h3>GPA is calculated using the following formula: Grade * credit hours / total credits </h3>
+        <form id="gradeForm">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Grade</th>
+                        <th>Credits</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody id="gradeTableBody">
+                    <tr>
+                        <td><input type="text" name="course" value="Course 1"></td>
+                        <td><input type="text" name="grade" value="A"></td>
+                        <td><input type="number" name="credits" value="3"></td>
+                        <td><button type="button" class="remove-row">x</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="button" id="addRow">+ Add row</button>
+            <button type="button" id="calculateGPA">= Calculate</button>
+            <button type="reset" id="resetForm">× Reset</button>
+        </form>
+        <div class="result">
+            <h2>GPA: <span id="gpaResult"></span></h2>
+        </div>
+        <div id="image">
+            <img src="/images/image.png"/>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

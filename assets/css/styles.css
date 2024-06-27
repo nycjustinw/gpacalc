@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    margin: auto;
+    border: 1px solid #ccc;
+    background-color: #6BAA75
+}
+h1 {
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 5px;
+}
+button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+.result {
+    text-align: center;
+}
+img{
+    padding: 10px;
+}
